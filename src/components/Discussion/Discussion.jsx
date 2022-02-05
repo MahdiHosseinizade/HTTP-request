@@ -1,4 +1,5 @@
-import axios from "axios";
+import { getAllComments, getComments } from "../../services/getAllComments";
+import { addNewComment } from "../../services/addNewComment";
 import { useEffect, useState } from "react";
 import Comment from "../Commnet/Commnet";
 import FullComment from "../FullCommnet/FullComment";
@@ -20,7 +21,7 @@ const Discussion = () => {
     
     async function getComments(){
         try{
-            const {data} = await axios.get("http://localhost:3001/comments")
+            const {data} = await getAllComments();
             setComments(data)
         }catch(error){
             setError(true);
@@ -33,16 +34,16 @@ const Discussion = () => {
 
 
     // const postCommentHandler = (comment) =>{
-    //     axios.post("http://localhost:3001/comments",{...comment,postId:10})
-    //     .then((res) => axios.get("http://localhost:3001/comments"))
+    //     axios.post("/comments",{...comment,postId:10})
+    //     .then((res) => axios.get("/comments"))
     //     .then((res) => setComments(res.data))
     //     .catch((err) => console.log(err));
     // }
 
     const postCommentHandler = async(comment) =>{
         try {
-            await axios.post("http://localhost:3001/comments",{...comment,postId:10})
-            const {data} =await axios.get("http://localhost:3001/comments")
+            await addNewComment({...comment,postId:10})
+            const {data} =await getAllComments();
             setComments(data)
         } catch (error) {
             console.log(error);
