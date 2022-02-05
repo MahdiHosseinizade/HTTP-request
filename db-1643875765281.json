@@ -1,0 +1,25 @@
+{
+  "comments": [
+    {
+      "postId": 1,
+      "id": 1,
+      "name": "idex et quam laborum",
+      "email": "Eliseo@gardner.biz",
+      "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "name": "mhdi_sh",
+      "email": "younes.gh@chmail.ir",
+      "content": "This is  atest",
+      "postId": 10,
+      "id": 5
+    },
+    {
+      "name": "mhdi_sh",
+      "email": "dsdl@oidhid",
+      "content": "This is a test",
+      "postId": 10,
+      "id": 6
+    }
+  ]
+}

@@ -1,11 +1,14 @@
 
 import './commnet.css'
 
-const Comment = () => {
+const Comment = ({name,email,onClick}) => {
+    
+    
+
     return (
-        <div className="commnet">
-            <p>name</p>
-            <p>email</p>
+        <div className="commnet" onClick={onClick}>
+            <p>name:{name}</p>
+            <p>email:{email}</p>
         </div>
     );
 }
