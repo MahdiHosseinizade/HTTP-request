@@ -19,13 +19,6 @@
       "email": "dsdl@oidhid",
       "content": "eee",
       "postId": 10,
-      "id": 3
-    },
-    {
-      "name": "mhdi_sh",
-      "email": "dsdl@oidhid",
-      "content": "eee",
-      "postId": 10,
       "id": 4
     },
     {
@@ -43,25 +36,11 @@
       "id": 6
     },
     {
-      "name": "mhdi_sh",
+      "name": "برنامه نویسی پیشرفته",
       "email": "dsdl@oidhid",
-      "content": "eee",
+      "content": "dsdd",
       "postId": 10,
-      "id": 7
-    },
-    {
-      "name": "mhdi_sh",
-      "email": "dsdl@oidhid",
-      "content": "eee",
-      "postId": 10,
-      "id": 9
-    },
-    {
-      "name": "mhdi_sh",
-      "email": "dsdl@oidhid",
-      "content": "eee",
-      "postId": 10,
-      "id": 10
+      "id": 12
     }
   ]
 }

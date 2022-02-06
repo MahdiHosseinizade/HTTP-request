@@ -3,7 +3,14 @@ import axios from 'axios';
 axios.defaults.baseURL = "http://localhost:3001"
 
 
-
+// 1.response 2.request
+// axios.interceptors.request.use((request) =>{
+//     console.log(request);
+//     return request
+// },(error)=>{
+//     console.log(error);
+//     return Promise.reject();
+// })
 
 
 const http = {

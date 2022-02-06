@@ -19,6 +19,7 @@ const NewComment = ({onAddPost}) => {
 
     return (
         <div className="newComment">
+        <h1>Add Comment</h1>
             <div>
                 <label>name</label>
                 <input type="text" onChange={changeHandler} name="name"/>
@@ -30,10 +31,10 @@ const NewComment = ({onAddPost}) => {
                 <input type="email" onChange={changeHandler} name='email'/>
             </div>
             <div>
-                <label>body</label>
+                <label className='bodyText'>body</label>
                 <textarea onChange={changeHandler} name='content'/>
             </div>
-            <button onClick={() => onAddPost(comment)}>Add new comment</button>
+            <button className='addComment' onClick={() => onAddPost(comment)}>Add new comment</button>
         </div>
     );
 }
